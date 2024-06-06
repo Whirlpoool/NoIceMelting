@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "noicemelting",
+  "version": "${version}",
+  "name": "NoIceMelting",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Leo Bulatewicz/NoIceMelting"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/noicemelting/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "whirlpool.noicemelting.client.NoIceMeltingClient"
+    ],
+    "main": [
+      "whirlpool.noicemelting.NoIceMelting"
+    ]
+  },
+  "mixins": [
+    "noicemelting.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
